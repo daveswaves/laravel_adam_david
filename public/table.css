@@ -1,0 +1,32 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th,td {
+    border: 1px solid #999;
+    padding: 5px;
+    font-size: 13px;
+}
+
+thead>tr {
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+tbody>tr:nth-of-type(odd) {
+    background: #ddd;
+}
+tbody>tr:hover {
+    background: #b3d2e2;
+}
+
+th[sortcol=asc]:after {
+    color: #fff;
+    content: ' \25bc';
+}
+
+th[sortcol=desc]:after {
+    color: #fff;
+    content: ' \25b2';
+}
